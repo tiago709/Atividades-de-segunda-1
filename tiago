@@ -68,3 +68,15 @@ fi
 
 -----------------------------------------
 
+#!/bin/bash
+
+echo "digite um numero e veja seu fatorial"
+read numero1;
+i=1;
+fat=1;
+while [ $i -le $numero1 ];do
+fat=$(($fat*$i))
+i=$(($i+1))
+echo "seu fatorial de $numero1 é $fat"
+done
+
