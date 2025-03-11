@@ -1,0 +1,70 @@
+#!/bin/bash
+
+echo "digite um numero"
+read numero1;
+echo "digite um segundo numero"
+read numero2;
+echo "escolha o que você quer fazer com a conta?"
+echo "1 - multiplicar"
+echo "2 - somar"
+echo "3 - dividir"
+echo "4 - subtrair"
+echo - "escolha sua opção:"
+read opcao;
+case $opcao in
+"1")
+result1=$(($numero1*$numero2))
+echo "seu resultado é $result1"
+;;
+"2")
+result2=$(($numero1+$numero2))
+echo "seu resultado é $result2"
+;;
+"3")
+result3=$(($numero1/$numero2))
+echo "seu resultado é $result3"
+;;
+"4")
+result4=$(($numero1-$numero2))
+echo "seu resultado é $result4"
+;;
+esac
+
+-----------------------------------------------
+
+#!/bin/bash
+
+echo "digite um numero"
+read numero1;
+echo "digite um segundo numero"
+read numero2;
+echo "escolha o que você quer fazer com a conta?"
+echo "1 - multiplicar"
+echo "2 - somar"
+echo "3 - dividir"
+echo "4 - subtrair"
+read opcao;
+
+if [ $opcao == "1" ];
+then
+result1=$(($numero1*$numero2))
+echo "seu resultado é $result1f"
+
+elif [ $opcao == "2" ];
+then 
+result2=$(($numero1+$numero2))
+echo "seu resultado é $result2"
+
+elif [ $opcao == "3" ];
+result3=$(($numero1/$numero2))
+then
+echo "seu resultado é $result3"
+
+elif [ $opcao == "4" ]
+result4=$(($numero1-$numero2))
+then
+echo "seu resultado é $result4"
+fi
+
+-----------------------------------------
+
